@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Practice 04</title>
+  </head>
+  <body>
+    <!-- Absolute Path -->
+    <hr />
+    <h2>Absolute Path (Best when working without hosting)</h2>
+    <img
+      src="A:\01. LMS - UOC\CS 2001\21. Final HTML Practice Files\img\flowers.jpg"
+      width="30%"
+      height="50%"
+    />
+    <hr />
+    <!-- Relative Path -->
+    <h2>Relative Path (Best when working with servers)</h2>
+    <img src="./img/img01.png" width="200px" height="300px" />
+    <hr />
+  </body>
+  <!-- Specifying Links -->
+  <h2>Specifying Links</h2>
+  <address><a href="mailto:nipunlakshan914@gmail.com">Email Us</a></address>
+  <a href="audio/Dawasak Ewi.mp3">Dawasak Ewi Song</a>
+  <hr />
+  <!-- Forms in HTML -->
+  <h2>Forms in HTML</h2>
+  <form
+    method="post"
+    action="mailto:nipunlakshan914@gmail.com"
+    enctype="text/plain"
+  >
+    <table border="1">
+      <tr>
+        <td width="300"><label for="name-label">Name</label></td>
+        <td><input type="text" name="name" size="100" /></td>
+      </tr>
+      <tr>
+        <td><label for="password-label">Password</label></td>
+        <td><input type="password" name="password" size="10" /></td>
+      </tr>
+      <tr>
+        <td><label for="country-label">Country</label></td>
+        <td>
+          <select type="text" name="pull-down-menu-for-country" size="1">
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="UK">UK</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="Male" id="male" />Male<br />
+          <input type="radio" name="Male" />Female
+        </td>
+      </tr>
+    </table>
+    <p>Select all the colors you like:</p>
+    <input type="checkbox" id="like_red" name="like_color" value="red" />
+    <label for="like_red">Red</label><br />
+    <input type="checkbox" id="like_blue" name="like_color" value="blue" />
+    <label for="like_blue">Blue</label><br />
+    <input type="number" name="points" min="0" max="100" step="10" value="30" />
+    <input type="submit" />
+  </form>
+</html>
