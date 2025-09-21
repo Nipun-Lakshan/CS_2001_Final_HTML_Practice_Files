@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 08</title>
+    <style>
+      article {
+        counter-reset: section; /* 1. Initialize a counter named 'section' */
+      }
+
+      h2::before {
+        counter-increment: section; /* 2. Increment the 'section' counter */
+        content: "Section " counter(section) ": "; /* 3. Display the counter */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>List with outside bullets (default)</li>
+      <li>The text aligns neatly.</li>
+    </ul>
+    <hr />
+    <ul style="list-style-position: inside">
+      <li>List with inside bullets</li>
+      <li>The text wraps under the bullet.</li>
+    </ul>
+    <hr />
+    <article>
+      <h2>Introduction</h2>
+      <h2>Main Content</h2>
+      <h2>Conclusion</h2>
+    </article>
+  </body>
+</html>
